@@ -202,5 +202,6 @@ Table of contents
 
 .access img {
   margin: 6rem 0;
+  filter: drop-shadow(0 5px 0.75rem #ebeced);
 }
 /*# sourceMappingURL=main.css.map */
