@@ -149,4 +149,33 @@ Table of contents
   padding: 0 2rem;
   margin: 10rem 0;
 }
+
+.feature {
+  padding: 0 3rem;
+  text-align: center;
+}
+
+.feature h1,
+.feature h2 {
+  font-size: 3rem;
+  font-weight: bolder;
+  color: #343a40;
+}
+
+.feature p {
+  margin-top: 2rem;
+  line-height: 1.65;
+  word-spacing: 0.5rem;
+  font-size: 2rem;
+  font-weight: 300;
+  color: #6c757d;
+}
+
+.feature img {
+  margin: 5rem 0;
+}
+
+.feature p {
+  margin-bottom: 6rem;
+}
 /*# sourceMappingURL=main.css.map */
