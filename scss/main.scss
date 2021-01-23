@@ -63,3 +63,17 @@ Table of contents
     margin-bottom: 6rem;
   }
 }
+
+//end of .feature
+
+// 3. access
+.access {
+  padding: 0 2rem;
+  text-align: center;
+  @include h_p;
+
+  img {
+    margin: 6rem 0;
+  }
+}
+//end of .access

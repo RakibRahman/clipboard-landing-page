@@ -178,4 +178,29 @@ Table of contents
 .feature p {
   margin-bottom: 6rem;
 }
+
+.access {
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.access h1,
+.access h2 {
+  font-size: 3rem;
+  font-weight: bolder;
+  color: #343a40;
+}
+
+.access p {
+  margin-top: 2rem;
+  line-height: 1.65;
+  word-spacing: 0.5rem;
+  font-size: 2rem;
+  font-weight: 300;
+  color: #6c757d;
+}
+
+.access img {
+  margin: 6rem 0;
+}
 /*# sourceMappingURL=main.css.map */
