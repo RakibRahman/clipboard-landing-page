@@ -1,0 +1,31 @@
+@mixin buttons($bg-clr) {
+  color: $white;
+  font-size: 2rem;
+  padding: 2rem 4rem;
+  border: none;
+  outline: 0;
+  border-radius: 100vh;
+  background: $bg-clr;
+  width: 300px;
+  cursor: pointer;
+  &:hover {
+    filter: opacity(81%);
+  }
+}
+
+@mixin h_p {
+  h1,
+  h2 {
+    font-size: 3rem;
+    font-weight: bolder;
+    color: $dark;
+  }
+  p {
+    margin-top: 2rem;
+    line-height: 1.65;
+    word-spacing: 0.5rem;
+    font-size: 2rem;
+    font-weight: 300;
+    color: $gray;
+  }
+}

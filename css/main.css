@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+::selection {
+  color: #fd7e14;
+  background-color: #343a40;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+
+fieldset,
+img {
+  border: 0;
+  width: 100%;
+  height: auto;
+}
+
+li {
+  list-style: none;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 20em) {
+  html {
+    font-size: 43.75%;
+  }
+}
+
+@media screen and (min-width: 48em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media screen and (min-width: 62em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #007bff;
+  background-color: #fff;
+}
+
+/*
+Table of contents
+1. header
+2. feature
+3. access
+4. gallery
+5. download
+6. footer
+*/
+.header {
+  text-align: center;
+}
+
+.header h1,
+.header h2 {
+  font-size: 3rem;
+  font-weight: bolder;
+  color: #343a40;
+}
+
+.header p {
+  margin-top: 2rem;
+  line-height: 1.65;
+  word-spacing: 0.5rem;
+  font-size: 2rem;
+  font-weight: 300;
+  color: #6c757d;
+}
+
+.header__intro {
+  background-image: url("/images/bg-header-mobile.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  padding: 0 2rem;
+  margin-bottom: 5rem;
+}
+
+.header__intro img {
+  margin: 5rem 0;
+  width: 150px;
+}
+
+.header__button {
+  display: block;
+  margin: 5rem auto;
+}
+
+.header__button--ios {
+  color: #fff;
+  font-size: 2rem;
+  padding: 2rem 4rem;
+  border: none;
+  outline: 0;
+  border-radius: 100vh;
+  background: #17a2b8;
+  width: 300px;
+  cursor: pointer;
+  margin-bottom: 0px;
+}
+
+.header__button--ios:hover {
+  filter: opacity(81%);
+}
+
+.header__button--mac {
+  margin-top: 15px;
+  color: #fff;
+  font-size: 2rem;
+  padding: 2rem 4rem;
+  border: none;
+  outline: 0;
+  border-radius: 100vh;
+  background: #007bff;
+  width: 300px;
+  cursor: pointer;
+}
+
+.header__button--mac:hover {
+  filter: opacity(81%);
+}
+
+.header__track {
+  padding: 0 2rem;
+  margin: 10rem 0;
+}
+/*# sourceMappingURL=main.css.map */

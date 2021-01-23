@@ -1,0 +1,53 @@
+@import "mediaQueries";
+@import "variables";
+@import "mixins";
+@import "base";
+
+/*
+Table of contents
+1. header
+2. feature
+3. access
+4. gallery
+5. download
+6. footer
+*/
+
+// 1. header
+.header {
+  text-align: center;
+  @include h_p;
+
+  &__intro {
+    background-image: url("/images/bg-header-mobile.png");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    padding: 0 2rem;
+
+    margin-bottom: 5rem;
+    img {
+      margin: 5rem 0;
+      width: 150px;
+    }
+  }
+  &__button {
+    display: block;
+    margin: 5rem auto;
+    &--ios {
+      @include buttons($cyan);
+      margin-bottom: 0px;
+    }
+    &--mac {
+      margin-top: 15px;
+      @include buttons($blue);
+    }
+  }
+  &__track {
+    padding: 0 2rem;
+    margin: 10rem 0;
+  }
+}
+// end of header
+
+// 2. feature
