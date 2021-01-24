@@ -30,6 +30,12 @@ img {
   height: auto;
 }
 
+fieldset:hover,
+img:hover {
+  cursor: pointer;
+  transform: scale(1.03);
+}
+
 li {
   list-style: none;
 }
@@ -68,9 +74,10 @@ Table of contents
 1. header
 2. feature
 3. access
-4. gallery
-5. download
-6. footer
+4. workflow
+5. gallery
+6. download
+7. footer
 */
 .header {
   text-align: center;
@@ -203,5 +210,182 @@ Table of contents
 .access img {
   margin: 6rem 0;
   filter: drop-shadow(0 5px 0.75rem #ebeced);
+}
+
+.workflow {
+  margin: 5rem 0;
+  padding: 0 3rem;
+}
+
+.workflow__intro {
+  text-align: center;
+}
+
+.workflow__intro h1,
+.workflow__intro h2 {
+  font-size: 3rem;
+  font-weight: bolder;
+  color: #343a40;
+}
+
+.workflow__intro p {
+  margin-top: 2rem;
+  line-height: 1.65;
+  word-spacing: 0.5rem;
+  font-size: 2rem;
+  font-weight: 300;
+  color: #6c757d;
+}
+
+.workflow__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.workflow__wrapper > * {
+  margin: 6rem 0;
+}
+
+.workflow__card {
+  text-align: center;
+}
+
+.workflow__card h1,
+.workflow__card h2 {
+  font-size: 3rem;
+  font-weight: bolder;
+  color: #343a40;
+}
+
+.workflow__card p {
+  margin-top: 2rem;
+  line-height: 1.65;
+  word-spacing: 0.5rem;
+  font-size: 2rem;
+  font-weight: 300;
+  color: #6c757d;
+}
+
+.workflow__card img {
+  width: 50%;
+  margin-bottom: 2rem;
+}
+
+.workflow__card h2,
+.workflow__card p {
+  margin: 2rem 0;
+}
+
+.gallery {
+  margin: 2rem 0 6rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6rem;
+}
+
+.gallery img {
+  width: 100%;
+}
+
+.download {
+  margin: 10rem 0;
+  text-align: center;
+}
+
+.download h1,
+.download h2 {
+  font-size: 3rem;
+  font-weight: bolder;
+  color: #343a40;
+}
+
+.download p {
+  margin-top: 2rem;
+  line-height: 1.65;
+  word-spacing: 0.5rem;
+  font-size: 2rem;
+  font-weight: 300;
+  color: #6c757d;
+}
+
+.download h1,
+.download p {
+  padding: 0 4rem;
+}
+
+.download__button {
+  padding: 0 4rem;
+  display: block;
+  margin: 5rem auto;
+}
+
+.download__button--ios {
+  color: #fff;
+  font-size: 2rem;
+  padding: 2rem 4rem;
+  border: none;
+  outline: 0;
+  border-radius: 100vh;
+  background: #17a2b8;
+  width: 300px;
+  cursor: pointer;
+  margin-bottom: 0px;
+}
+
+.download__button--ios:hover {
+  filter: opacity(81%);
+}
+
+.download__button--mac {
+  margin-top: 20px;
+  color: #fff;
+  font-size: 2rem;
+  padding: 2rem 4rem;
+  border: none;
+  outline: 0;
+  border-radius: 100vh;
+  background: #007bff;
+  width: 300px;
+  cursor: pointer;
+}
+
+.download__button--mac:hover {
+  filter: opacity(81%);
+}
+
+.footer {
+  font-size: 3rem;
+  color: #6c757d;
+  text-align: center;
+  background: #f3f3f3;
+  padding: 5rem 10rem;
+}
+
+.footer__content {
+  margin: 6rem 0;
+}
+
+.footer__content ul {
+  margin: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.footer__logo img {
+  width: 20%;
+}
+
+.footer__icons {
+  padding: 0 3rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer .attribution {
+  font-size: 1.5rem;
 }
 /*# sourceMappingURL=main.css.map */
