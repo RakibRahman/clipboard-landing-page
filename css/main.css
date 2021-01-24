@@ -113,6 +113,14 @@ Table of contents
   width: 150px;
 }
 
+@media screen and (min-width: 62em) {
+  .header__intro {
+    padding: 0 14rem;
+    font-size: 3rem;
+    background-image: url(/images/bg-header-desktop.png);
+  }
+}
+
 .header__button {
   display: block;
   margin: 5rem auto;
@@ -152,9 +160,25 @@ Table of contents
   filter: opacity(81%);
 }
 
+@media screen and (min-width: 62em) {
+  .header__button {
+    display: inline;
+  }
+  .header__button--mac {
+    margin-left: 2rem;
+  }
+}
+
 .header__track {
   padding: 0 2rem;
   margin: 10rem 0;
+}
+
+@media screen and (min-width: 62em) {
+  .header__track {
+    padding: 0 14rem;
+    font-size: 3rem;
+  }
 }
 
 .feature {
@@ -186,6 +210,29 @@ Table of contents
   margin-bottom: 6rem;
 }
 
+@media screen and (min-width: 62em) {
+  .feature {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .feature__img {
+    flex: 1 1 60%;
+  }
+  .feature__img img {
+    width: 100%;
+    max-width: 800px;
+    margin-left: -200px;
+  }
+  .feature__wrapper {
+    flex: 1 1 40%;
+    text-align: left;
+    font-size: 1rem;
+    margin-right: 5rem;
+  }
+}
+
 .access {
   padding: 0 2rem;
   text-align: center;
@@ -210,6 +257,16 @@ Table of contents
 .access img {
   margin: 6rem 0;
   filter: drop-shadow(0 5px 0.75rem #ebeced);
+}
+
+@media screen and (min-width: 62em) {
+  .access {
+    padding: 0 16rem;
+    font-size: 4rem;
+  }
+  .access img {
+    max-width: 900px;
+  }
 }
 
 .workflow {
@@ -277,6 +334,33 @@ Table of contents
   margin: 2rem 0;
 }
 
+@media screen and (min-width: 62em) {
+  .workflow__intro {
+    margin-top: 5rem;
+  }
+  .workflow__intro h1 {
+    font-size: 5rem;
+  }
+  .workflow__wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+  }
+  .workflow__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .workflow__card img {
+    width: 100%;
+    max-width: 80px;
+    margin-bottom: 10rem;
+  }
+  .workflow__card p {
+    font-size: 2rem;
+    padding: 0 4rem;
+  }
+}
+
 .gallery {
   margin: 2rem 0 6rem 0;
   display: flex;
@@ -288,6 +372,15 @@ Table of contents
 
 .gallery img {
   width: 100%;
+}
+
+@media screen and (min-width: 62em) {
+  .gallery {
+    margin-top: 20rem;
+    padding: 0 20rem;
+    flex-direction: row;
+    gap: 10rem;
+  }
 }
 
 .download {
@@ -356,6 +449,21 @@ Table of contents
   filter: opacity(81%);
 }
 
+@media screen and (min-width: 62em) {
+  .download {
+    margin-top: 20rem;
+    padding: 0 10rem;
+  }
+  .download__content p {
+    font-size: 3rem;
+    line-height: 1.65;
+  }
+  .download__button {
+    display: inline;
+    margin-right: 20px;
+  }
+}
+
 .footer {
   font-size: 3rem;
   color: #6c757d;
@@ -369,6 +477,7 @@ Table of contents
 }
 
 .footer__content ul {
+  cursor: pointer;
   margin: 5rem 0;
   display: flex;
   flex-direction: column;
@@ -387,5 +496,20 @@ Table of contents
 
 .footer .attribution {
   font-size: 1.5rem;
+}
+
+@media screen and (min-width: 62em) {
+  .footer__content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .footer ul {
+    font-size: 2rem;
+    flex-direction: row;
+  }
+  .footer__icons {
+    gap: 2rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */

@@ -31,6 +31,13 @@ Table of contents
       margin: 5rem 0;
       width: 150px;
     }
+    //mQ
+    @include responsive(pc) {
+      padding: 0 14rem;
+
+      font-size: 3rem;
+      background-image: url(/images/bg-header-desktop.png);
+    }
   }
   &__button {
     display: block;
@@ -43,10 +50,23 @@ Table of contents
       margin-top: 15px;
       @include buttons($blue);
     }
+    //Mq
+    @include responsive(pc) {
+      display: inline;
+
+      &--mac {
+        margin-left: 2rem;
+      }
+    }
   }
   &__track {
     padding: 0 2rem;
     margin: 10rem 0;
+    //mQ
+    @include responsive(pc) {
+      padding: 0 14rem;
+      font-size: 3rem;
+    }
   }
 }
 // end of header
@@ -63,6 +83,27 @@ Table of contents
   p {
     margin-bottom: 6rem;
   }
+  @include responsive(pc) {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    &__img {
+      flex: 1 1 60%;
+      & img {
+        width: 100%;
+        max-width: 800px;
+        margin-left: -200px;
+      }
+    }
+    &__wrapper {
+      flex: 1 1 40%;
+      text-align: left;
+      font-size: 1rem;
+      margin-right: 5rem;
+    }
+  }
 }
 
 //end of .feature
@@ -76,6 +117,14 @@ Table of contents
   img {
     margin: 6rem 0;
     filter: drop-shadow(0 5px 0.75rem #ebeced);
+  }
+  @include responsive(pc) {
+    padding: 0 16rem;
+
+    font-size: 4rem;
+    & img {
+      max-width: 900px;
+    }
   }
 }
 //end of .access
@@ -111,6 +160,33 @@ Table of contents
       margin: 2rem 0;
     }
   }
+  //mQ
+  @include responsive(pc) {
+    &__intro {
+      margin-top: 5rem;
+      & h1 {
+        font-size: 5rem;
+      }
+    }
+    &__wrapper {
+      display: grid;
+      grid-template-columns: repeat(3, 3fr);
+    }
+    &__card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      & img {
+        width: 100%;
+        max-width: 80px;
+        margin-bottom: 10rem;
+      }
+      & p {
+        font-size: 2rem;
+        padding: 0 4rem;
+      }
+    }
+  }
 }
 // end of .workflow
 
@@ -124,6 +200,14 @@ Table of contents
   gap: 6rem;
   img {
     width: 100%;
+  }
+  //mQ
+  @include responsive(pc) {
+    margin-top: 20rem;
+
+    padding: 0 20rem;
+    flex-direction: row;
+    gap: 10rem;
   }
 }
 // end of .gallery
@@ -151,6 +235,22 @@ Table of contents
       @include buttons($blue);
     }
   }
+  //mQ
+  @include responsive(pc) {
+    margin-top: 20rem;
+    padding: 0 10rem;
+    &__content {
+      & p {
+        font-size: 3rem;
+        //padding: 0 5rem;
+        line-height: 1.65;
+      }
+    }
+    &__button {
+      display: inline;
+      margin-right: 20px;
+    }
+  }
 }
 // end of .download
 
@@ -166,6 +266,7 @@ Table of contents
     margin: 6rem 0;
 
     & ul {
+      cursor: pointer;
       margin: 5rem 0;
       display: flex;
       flex-direction: column;
@@ -184,5 +285,20 @@ Table of contents
   }
   & .attribution {
     font-size: 1.5rem;
+  }
+  //mQ
+  @include responsive(pc) {
+    &__content {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+    & ul {
+      font-size: 2rem;
+      flex-direction: row;
+    }
+    &__icons {
+      gap: 2rem;
+    }
   }
 }
